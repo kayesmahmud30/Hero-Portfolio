@@ -5,6 +5,16 @@
 }
 
 /* Shared style */
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: none;
+  border: 2px solid #fd6e0a;
+  color: #fd6e0a;
+  transition: 0.3s;
+}
 
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
@@ -13,7 +23,7 @@
 
 .logo h2 {
   font-size: 45px;
-  font-weight: 900;
+  font-weight: 900px;
 }
 .color-orange {
   color: #fd6e0a;
@@ -40,6 +50,13 @@
   background: none;
   border: 2px solid #fd6e0a;
   color: #fd6e0a;
+}
+
+.contact-btn:hover {
+  background: #fd6e0a;
+  border: 2px inherit;
+  color: #fff;
+  transition: 0.3s;
 }
 
 .section-heading {
@@ -301,6 +318,10 @@ footer .footer-container {
     width: 95%;
   }
 
+  .logo h2{
+    text-align: center;
+  }
+
   .section-heading h2 {
     font-size: 30px;
   }
@@ -313,6 +334,7 @@ footer .footer-container {
     background: url(../images/header_bg.png), #fff8f3;
     background-position: bottom right;
     background-repeat: no-repeat;
+    padding: 15px 0 0;
   }
 
   nav {
@@ -322,6 +344,7 @@ footer .footer-container {
   nav .menu {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
   }
 
   #banner {
@@ -335,7 +358,7 @@ footer .footer-container {
   }
 
   #banner .banner-content h1 {
-    font-size: 44px;
+    font-size: 30px;
   }
 
   #about,
